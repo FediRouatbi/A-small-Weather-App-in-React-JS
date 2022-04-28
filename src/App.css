@@ -1,0 +1,83 @@
+.container {
+  background-image: url("./images/cold-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+  width: 30vw;
+  margin-top: 100px;
+}
+main {
+  height: 80vh;
+  width: 30vw;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+}
+.container.warm {
+  background-image: url("./images/warm-bg.jpg");
+}
+main > * {
+  width: 80%;
+  margin: 0 auto;
+}
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 16px 16px;
+  margin-top: -25px;
+  box-shadow: 0 5px rgb(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.location-box {
+  padding-top: 80px;
+}
+.location-box .location {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgb(50, 50, 70, 0.5);
+}
+.location-box .date {
+  color: #fff;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 3px 3px rgb(50, 50, 70, 0.5);
+}
+.weather-box .temp {
+  text-align: center;
+  position: relative;
+  margin: 30px auto;
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 15px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 900;
+  text-shadow: 3px 3px rgba(255, 255, 255, 0.2);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+.weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgb(50, 50, 70, 0.5);
+  text-align: center;
+}
+.weather-box .smallsize {
+  font-size: 50px;
+}
